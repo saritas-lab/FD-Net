@@ -42,7 +42,7 @@ You are encouraged to modify/distribute this code. However, please acknowledge t
 }
 
 ```
-<p>© 2023 AbdallahKelani</p>
+(c) ICON Lab 2022
 
 # Prerequisites
 - python=3.9.6
