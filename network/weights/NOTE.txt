@@ -1,0 +1,1 @@
+FD-Net trained on 4/8/12/42 subjects + fine-tuned on additonal 4 FMRI subjects.

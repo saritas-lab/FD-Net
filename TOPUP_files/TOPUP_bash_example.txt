@@ -1,0 +1,18 @@
+function time_topup { args : integer hcp} {
+	echo "Begin ${hcp}"
+	cd ".../${hcp}/unprocessed/3T/Diffusion"
+
+	fslroi "${hcp}_3T_DWI_dir95_LR" "100206_3T_DWI_dir95_LR_b0" 0 1
+	fslroi "${hcp}_3T_DWI_dir95_RL" "100206_3T_DWI_dir95_RL_b0" 0 1
+	fslmerge  -t "${hcp}_3T_DWI_dir95_RLRL_b0" "${hcp}_3T_DWI_dir95_LR_b0" "${hcp}_3T_DWI_dir95_RL_b0"
+	/usr/bin/time -p topup --imain="${hcp}_3T_DWI_dir95_RLRL_b0" --datain=acqparams_DWI.txt --config=b02b0_1.cnf --out="${hcp}_3T_DWI_dir95_topup_b0" --iout="${hcp}_3T_DWI_dir95_topup_iout" --fout="${hcp}_3T_DWI_dir95_topup_fout"
+	/usr/bin/time -p applytopup --imain="${hcp}_3T_DWI_dir95_LR","${hcp}_3T_DWI_dir95_RL" --inindex=1,2 --datain=acqparams_DWI.txt --topup=""${hcp}_3T_DWI_dir95_topup" --out="${hcp}_3T_DWI_dir95_topup_results"
+	
+	# ... repeat for dir96 etc. as necessary
+
+	echo "End ${hcp}"
+}
+
+echo
+time_topup
+echo
