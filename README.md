@@ -3,7 +3,9 @@ Official repository for "FD-Net: An Unsupervised Deep Forward-Distortion Model f
 - [arXiv](https://arxiv.org/abs/2303.10436)
 - [MRM](https://onlinelibrary.wiley.com/doi/full/10.1002/mrm.29851)
 
-```A. Zaid Alkilani, T. Çukur, and E.U. Saritas, “FD-Net: A Deep Forward-Distortion Model for Unsupervised Susceptibility Artifact Correction in EPI.” Accepted to Magnetic Resonance in Medicine (15 August 2023).```
+```
+Zaid Alkilani A, Çukur T, Saritas EU. FD-Net: An unsupervised deep forward-distortion model for susceptibility artifact correction in EPI. Magn Reson Med. 2023; 1-17. doi: 10.1002/mrm.29851
+```
 
 # Demo
 - The files under ```/TOPUP_files``` demonstrate how TOPUP could be performed.
