@@ -1,6 +1,7 @@
 # FD-Net
 Official repository for "FD-Net: An Unsupervised Deep Forward-Distortion Model for Susceptibility Artifact Correction in EPI".
 - [arXiv](https://arxiv.org/abs/2303.10436)
+- [MRM](https://onlinelibrary.wiley.com/doi/full/10.1002/mrm.29851)
 
 ```A. Zaid Alkilani, T. Çukur, and E.U. Saritas, “FD-Net: A Deep Forward-Distortion Model for Unsupervised Susceptibility Artifact Correction in EPI.” Accepted to Magnetic Resonance in Medicine (15 August 2023).```
 
@@ -22,6 +23,18 @@ Training code is provided in ```/network/fdnet.py```. See the relevant code sect
 You are encouraged to modify/distribute this code. However, please acknowledge this code and cite the paper appropriately.
 
 ```
+@article{ZaidAlkilani2023,
+	author = {Zaid Alkilani, Abdallah and Çukur, Tolga and Saritas, Emine Ulku},
+	title = {FD-Net: An unsupervised deep forward-distortion model for susceptibility artifact correction in EPI},
+	journal = {Magnetic Resonance in Medicine},
+	volume = {n/a},
+	number = {n/a},
+	pages = {},
+	doi = {https://doi.org/10.1002/mrm.29851},
+	url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/mrm.29851},
+	eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/mrm.29851}
+}
+
 @misc{ZaidAlkilani2023arxiv,
 	title = "FD-Net: An Unsupervised Deep Forward-Distortion Model for Susceptibility Artifact Correction in EPI", 
 	author = "Zaid Alkilani, Abdallah AND {\c C}ukur, Tolga AND Saritas, Emine Ulku",
